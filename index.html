@@ -9,18 +9,13 @@
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
 
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home">
+    <a href="#top">
       <img src="images/logo.jpg" class="logo w3-hover-opacity" alt="Jetmax logo">
     </a>
     <!-- Right-sided navbar links -->
@@ -50,7 +45,7 @@
   <div class="w3-text-white w3-hero">
     <span class="w3-jumbo">Global innovators in travel technology</span><br>
     <span class="w3-xlarge w3-padding-top-32">A division of <strong>Flight Centre Travel Group</strong>, Jetmax is an innovative ecommerce travel software company with offices on the Gold Coast, Australia.</span>
-    <p><a href="#about" class="w3-button w3-large">Learn more about Jetmax</a></p>
+    <p><a href="#what" class="w3-button w3-large">Learn more about Jetmax</a></p>
   </div>
 </header>
 
@@ -127,7 +122,7 @@
       <p><input class="w3-button w3-background-orange" type="submit" value="Send message"></p>
     </form>
     <footer class="w3-text-white w3-center">
-      <p>Copyright &copy; <script>document.write( new Date().getFullYear() );</script> Jetmax, a division of Flight Centre Travel Group.</p>
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Jetmax, a division of Flight Centre Travel Group.</p>
       <p><img src="images/fc-logo.png" class="w3-padding-16" alt="Flight Centre" height="55px" /></p>
     </footer>
   </div>
@@ -144,6 +139,10 @@ function w3_open() {
   } else {
     mySidebar.style.display = 'block';
   }
+}
+
+function scrollTo(hash) {
+    location.hash = "#" + hash;
 }
 
 // Close the sidebar with the close button
